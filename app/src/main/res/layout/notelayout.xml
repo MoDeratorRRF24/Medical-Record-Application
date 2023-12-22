@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="25px"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="25px"
+    android:paddingBottom="25px"
+    tools:layout_editor_absoluteX="30dp"
+    tools:layout_editor_absoluteY="206dp">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="12-06-2023"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/noteValues"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/bodyWeight"
+            android:layout_width="0dip"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bodyWeightPic"
+                android:layout_marginLeft="40px"
+                android:layout_width="100px"
+                android:layout_height="80px"
+                android:alpha="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/bodyweight"/>
+
+            <TextView
+                android:id="@+id/bodyWeightNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/bodyWeightKG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="KG"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/heartRate"
+            android:layout_width="0dip"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/heartRatePic"
+                android:layout_marginLeft="40px"
+                android:layout_width="100px"
+                android:layout_height="80px"
+                android:alpha="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/heartrate" />
+
+            <TextView
+                android:id="@+id/heartRateNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/heartRateBPM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="bpm"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sugarLevel"
+            android:layout_width="0dip"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sugarLevelPic"
+                android:layout_marginLeft="40px"
+                android:layout_width="100px"
+                android:layout_height="80px"
+                android:alpha="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/sugarblood" />
+
+            <TextView
+                android:id="@+id/sugarLevelNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/sugarLevelMGDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="mg/dL"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bloodPressure"
+            android:layout_width="0dip"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bloodPressurePic"
+                android:layout_marginLeft="40px"
+                android:layout_width="100px"
+                android:layout_height="80px"
+                android:alpha="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/bloodpressure" />
+
+            <TextView
+                android:id="@+id/bloodPressureNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/bloodPressureMMHG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="mmHg"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cholesterol"
+            android:layout_width="0dip"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cholesterolPic"
+                android:layout_marginLeft="40px"
+                android:layout_width="100px"
+                android:layout_height="80px"
+                android:alpha="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/cholesterol" />
+
+            <TextView
+                android:id="@+id/cholesterolNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/cholesterolMGDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="mg/dL"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_marginRight="15px"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#59FF00"
+            android:text="Edit"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_marginLeft="15px"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#B10C0C"
+            android:text="Delete"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
